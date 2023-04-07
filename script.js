@@ -112,6 +112,7 @@ var mm = document.querySelectorAll(".loader span")
 slider.onclick = function() {
     body.classList.toggle("ddddd");
     input.classList.toggle("ddddd");
+    output.classList.toggle("ddddd");
     ss.forEach(div => div.classList.toggle('ddddd'));
     t.classList.toggle("p");
     tt.classList.toggle("pp");
