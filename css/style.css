@@ -1,0 +1,484 @@
+body {
+    text-align: center;
+    background-color: #ccc;
+    font-size: 20px;
+    font-weight: 700;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.output {
+    color: #222;
+    font-size: 30px;
+}
+
+.input {
+    width: 90%;
+    background-color: #ccc;
+    margin: 0 auto;
+    height: 75px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #222;
+}
+
+.output {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+}
+
+.dark {
+    position: absolute;
+    top: 50px;
+    right: 500px;
+}
+
+.nums {
+    color: #222;
+    background-color: #ccc;
+}
+
+.ddddd {
+    color: #ccc !important;
+    background-color: #222 !important;
+}
+
+.nine,
+.eight,
+.seven,
+.six,
+.five,
+.four,
+.three,
+.two,
+.one,
+.zero,
+.dot,
+.plus,
+.minus,
+.mult,
+.division,
+.x,
+.C,
+.CE,
+.E,
+.ff {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: #222;
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.CE {
+    left: 170px;
+}
+
+.ff {
+    left: 20px;
+}
+
+.C {
+    left: 330px;
+}
+
+.x {
+    left: 485px;
+}
+
+.division {
+    left: 485px;
+    top: 250px;
+}
+
+.nine {
+    left: 330px;
+    top: 250px;
+}
+
+.eight {
+    left: 170px;
+    top: 250px;
+}
+
+.seven {
+    left: 20px;
+    top: 250px;
+}
+
+.mult {
+    left: 485px;
+    top: 365px;
+}
+
+.six {
+    left: 330px;
+    top: 365px;
+}
+
+.five {
+    left: 170px;
+    top: 365px;
+}
+
+.four {
+    left: 20px;
+    top: 365px;
+}
+
+.minus {
+    left: 485px;
+    top: 480px;
+}
+
+.three {
+    left: 330px;
+    top: 480px;
+}
+
+.two {
+    left: 170px;
+    top: 480px;
+}
+
+.one {
+    left: 20px;
+    top: 480px;
+}
+
+.plus {
+    left: 485px;
+    top: 595px;
+}
+
+.E {
+    left: 330px;
+    top: 595px;
+}
+
+.dot {
+    left: 170px;
+    top: 595px;
+}
+
+.zero {
+    left: 20px;
+    top: 595px;
+}
+
+.loader {
+    width: 600px;
+    margin: 30px auto;
+    position: relative;
+    padding: 15px;
+    height: 700px;
+    border-radius: 5px;
+    background-color: #183153;
+    transition: 0.5s;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.loader span {
+    position: absolute;
+    display: block;
+}
+
+.p {
+    background: linear-gradient(90deg, transparent, #ccc) !important;
+}
+
+.pp {
+    background: linear-gradient(270deg, transparent, #ccc) !important;
+}
+
+.ppp {
+    background: linear-gradient(180deg, transparent, #ccc) !important;
+}
+
+.pppp {
+    background: linear-gradient(360deg, transparent, #ccc) !important;
+}
+
+.loader span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #222);
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.loader span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #222);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.loader span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #222);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.loader span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #222);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+
+/* .switch:hover */
+
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* .switch:hover */
+
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
+
+@media (max-width: 477px) {
+    .loader {
+        width: 300px;
+    }
+    .nine,
+    .eight,
+    .seven,
+    .six,
+    .five,
+    .four,
+    .three,
+    .two,
+    .one,
+    .zero,
+    .dot,
+    .plus,
+    .minus,
+    .mult,
+    .division,
+    .x,
+    .C,
+    .CE,
+    .E,
+    .ff {
+        width: 50px;
+        height: 70px;
+        font-size: 20px;
+        padding-bottom: 5px;
+        margin-left: 0px;
+    }
+    .CE {
+        left: 100px;
+    }
+    .C {
+        left: 180px;
+    }
+    .x {
+        left: 260px;
+    }
+    .eight {
+        left: 100px;
+    }
+    .nine {
+        left: 180px;
+    }
+    .division {
+        left: 260px;
+    }
+    .five {
+        left: 100px;
+    }
+    .six {
+        left: 180px;
+    }
+    .mult {
+        left: 260px;
+    }
+    .two {
+        left: 100px;
+    }
+    .three {
+        left: 180px;
+    }
+    .minus {
+        left: 260px;
+    }
+    .dot {
+        left: 100px;
+    }
+    .E {
+        left: 180px;
+    }
+    .plus {
+        left: 260px;
+    }
+    .dark {
+        top: 50px;
+        right: 50px;
+    }
+}
