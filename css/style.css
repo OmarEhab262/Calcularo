@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #ccc;
+    background-color: #bcbfc1;
     font-size: 20px;
     font-weight: 700;
     height: 100vh;
@@ -14,7 +14,7 @@ body {
 
 .input {
     width: 90%;
-    background-color: #ccc;
+    background-color: #bcbfc1;
     margin: 0 auto;
     height: 75px;
     text-align: left;
@@ -38,11 +38,11 @@ body {
 
 .nums {
     color: #222;
-    background-color: #ccc;
+    background-color: #bcbfc1;
 }
 
 .ddddd {
-    color: #ccc !important;
+    color: #bcbfc1 !important;
     background-color: #222 !important;
 }
 
@@ -74,7 +74,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background-color: #bcbfc1;
     color: #222;
     font-size: 40px;
     padding-bottom: 5px;
@@ -199,19 +199,19 @@ body {
 }
 
 .p {
-    background: linear-gradient(90deg, transparent, #ccc) !important;
+    background: linear-gradient(90deg, transparent, #bcbfc1) !important;
 }
 
 .pp {
-    background: linear-gradient(270deg, transparent, #ccc) !important;
+    background: linear-gradient(270deg, transparent, #bcbfc1) !important;
 }
 
 .ppp {
-    background: linear-gradient(180deg, transparent, #ccc) !important;
+    background: linear-gradient(180deg, transparent, #bcbfc1) !important;
 }
 
 .pppp {
-    background: linear-gradient(360deg, transparent, #ccc) !important;
+    background: linear-gradient(360deg, transparent, #bcbfc1) !important;
 }
 
 .loader span:nth-child(1) {
@@ -219,7 +219,7 @@ body {
     left: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, transparent, #222);
+    background: linear-gradient(90deg, transparent, #73C0FC);
     animation: animate1 2s linear infinite;
     animation-delay: 0s;
 }
@@ -239,7 +239,7 @@ body {
     right: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(270deg, transparent, #222);
+    background: linear-gradient(270deg, transparent, #73C0FC);
     animation: animate3 2s linear infinite;
     animation-delay: 1s;
 }
@@ -259,7 +259,7 @@ body {
     right: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #222);
+    background: linear-gradient(180deg, transparent, #73C0FC);
     animation: animate2 2s linear infinite;
     animation-delay: 0.5s;
 }
@@ -279,7 +279,7 @@ body {
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #222);
+    background: linear-gradient(360deg, transparent, #73C0FC);
     animation: animate4 2s linear infinite;
     animation-delay: 1.5s;
 }
